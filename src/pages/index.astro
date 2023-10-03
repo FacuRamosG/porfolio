@@ -1,0 +1,209 @@
+---
+import Proyects from "../components/Proyects.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro"
+
+---
+
+<Layout title="Facundo Ramos Garde">
+	<main
+		id="super-container"
+		class="antialiased text-white bg-[#13161c] -z-20 sm:m-auto max-w-6xl sm:px-3 font"
+	>
+		<!----- BACKGROUND ---->
+		<!-- <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none ">
+			<div class="w-[108rem] flex-none flex justify-end">
+				<img src="/Fondo azul.png" alt="" class="w-[90rem] flex-none max-w-none hidden dark:block" />
+			</div>
+		</div> -->
+
+
+
+
+		<!-- --- HEADER ---->
+
+		<Header />	
+
+
+	<section class="">
+		<!----- PRESENTATION ---->
+			<section
+				class=" bg-transparent z-30 top-0 dark:bg-grid-slate-100) overflow-hidden pt-56"
+			>
+				
+
+				<div class="flex gap-10">
+					<div class="w-1/2 gap-4 my-auto flex flex-col" >
+						<h1 class="bg-transparent text-5xl text-gray-50 font-[700]">
+							Facundo Ramos Garde
+						</h1>
+						<p class="text-gray-500">Software Developer</p>
+						<p class="relative text-xl text-gray-300" style={"text-wrap: balance"}>
+							Innovative software engineer crafting digital solutions, merging code and vision to challenge technological frontiers.
+						</p>
+						<!-- <a
+							href="./public/CURRICULUM Facundo ramos.pdf"
+							download="Facundo Ramos Garde"
+							class=" z-30 px-6 text-center w-60 py-1 fa fa-download text-lg backdrop-blur-2xl bg-slate-700 rounded hover:bg-slate-600"> 
+
+							Download CV
+							
+						</a> -->
+						<div>
+							<a href="https://github.com/FacuRamosG" class="inline-block hover:invert mr-5"><img src="public/github-mark-white.png" alt="" height="25" width="25"></a>
+							<a href="https://www.linkedin.com/in/facundo-ramos-garde-791a55280/" class="inline-block">
+								<svg fill="#ffffff" 
+									height="25px" 
+									width="25px" 
+									class="hover:fill-[#0077b5]"  
+									version="1.1" 
+									id="Layer_1"
+									xmlns="http://www.w3.org/2000/svg" 
+									xmlns:xlink="http://www.w3.org/1999/xlink" 
+								viewBox="0 0 455 455" xml:space="preserve">
+						  			 <g>
+							   			<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+							   			<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+											M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+								   			c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+								  		 	c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+								   			c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+								   			z"/>
+						  	 		</g>
+						   		</svg>
+							</a>
+						</div>
+					</div>
+					<img src="public/FacuFoto.jpg" alt=""class="rounded-full object-cover sm:w-80 sm:h-80 min-[320px]:w-40 min-[320px]:h-40" >
+
+				</div>
+			</section>
+
+
+			<!----- PROYECTS ---->
+		
+			<section class="relative overflow-hidden pb-6 pt-14" id="projects">
+				
+				<h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50 font-[700]" >Proyects</h1>
+
+				<div class="flex justify-center align-middle">
+					<div class="sm:grid grid-cols-2 gap-9 min-[320px]:block ">
+
+						<Proyects 
+							title="FacuFlix" 
+							body="Welcome to our movies and series streaming platform! Dive into a world full of limitless entertainment. Explore an extensive library of high-quality movies and TV series, from timeless classics to the latest box office hits." 
+							img="./public/481shots_so.png" 
+							github="https://github.com/FacuRamosG" 
+							web="https://facu-flix.vercel.app/"
+							chips={['Express', 'Jsonwebtoken', 'Mongoose','Axios', 'React', 'NodeJS', 'MUI', 'Formik', 'Redux']}
+						/>
+						
+						<Proyects 
+							title="Weather" 
+							body="Discover the current weather in your city instantly! Our website provides accurate and up-to-date weather forecasts for any location. Simply enter the name of your city and get detailed information about temperature, weather conditions, humidity, and more." 
+							img="./public/117shots_so.png" 
+							github="https://github.com/FacuRamosG/weather" 
+							web="https://weather-tawny-delta.vercel.app/"
+							chips={['React', 'NodeJS', 'MUI']}
+						/>
+						
+						<!-- <Proyects 
+							title="X Project" 
+							body="" 
+							img="./public/ProjectX.png" 
+							github="https://github.com/FacuRamosG/weather" 
+							web="https://weather-tawny-delta.vercel.app/"
+							chips={['React','typescript', 'Next', 'Supabase', 'postcss', 'tailwindcss', 'textarea-caret', 'react-instantsearch-hooks']}
+						/> -->
+
+						<Proyects 
+							title="Weather" 
+							body="It's a copy of Tesla's page that had several animations I was interested in replicating." 
+							img="./public/LandingTesla.png" 
+							github="https://github.com/FacuRamosG/landing-tesla" 
+							web="https://landing-tesla-xi.vercel.app/"
+							chips={['Astro', 'Tailwind']}
+						/>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- About me -->
+			<section id="about-me">
+				<h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50 font-[700]" >About me</h1>
+				<div class="flex gap-9">
+					<div>
+						<p class="text-xl max-w-[80ch] font-light" style="text-wrap: balance" >
+							A passionate about programming, football, and sports in general. Coding is my creative language, where I solve complex problems and turn ideas into reality. Beyond the digital world, sports are my escape, where I find excitement and camaraderie.						
+						</p><br>
+						
+						<p class="text-xl max-w-[80ch] font-light" style="text-wrap: balance">
+							My restless spirit leads me to explore the world through travel, knowing new cultures and perspectives. I'm always in pursuit of continuous learning, whether it's acquiring new technological skills or delving into fascinating topics. My passion for programming, sports, travel, and learning shapes my balanced approach to life and personal growth.						
+						</p><br>
+						
+						<br>
+					</div>
+					<img src="public/FacuFoto.jpg" alt="" class="rounded-full object-cover sm:w-80 sm:h-80 min-[320px]:w-40 min-[320px]:h-40">
+				</div>
+			</section>
+
+		<!-- CONTACT ME	 -->
+		<section id="contact">
+			<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+				<h2 class="mb-4 text-4xl tracking-tight font-[700] text-center text-white">Contact</h2>
+				<form method="post" action="#" class="space-y-8">
+					<div>
+						<label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your email</label>
+						<input type="email" id="email" class="  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="name@gmail.com" required>
+					</div>
+					<div>
+						<label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
+						<input type="text" id="subject" class="block p-3 w-full text-sm   rounded-lg border   focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="How can help you" required>
+					</div>
+					<div class="sm:col-span-2">
+						<label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your message</label>
+						<textarea id="message" rows="6" class="block p-2.5 w-full text-sm   rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a message..."></textarea>
+					</div>
+					<button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">Send message</button>
+				</form>
+			</div>
+		  </section>
+
+			<!----- TEC ---->
+
+			<section class="mb-8 mt-10" id="tec">
+				<!-- <h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50">Technologies</h1> -->
+				<div class="flex justify-between items-center ">
+					<img src="/html5.svg" alt="logo of HTML" class="h-16 w-16" />
+					<img src="/css3.svg" alt="logo of CSS" class="h-16 w-16" />
+					<img src="/js.svg" alt="logo of JavaScript" class="h-16 w-16" />
+					<img src="/reactjs.svg" alt="logo of React" class="h-16 w-16" />
+					<img src="/tailwindcss-mark.svg" alt="logo of Tailwind" class="h-16 w-16" />
+					<img src="/ts-logo-256.svg" alt="logo of TypeScript" class="h-16 w-16">
+					<img src="/astro-icon-light.svg" alt="logo of Astro" class="h-16 w-16" />
+				</div>
+			</section>
+		</section>
+
+	
+
+
+		<!----- FOOTER ---->
+
+	<footer class="bg-white rounded-lg shadow dark:bg-gray-800 w-full mb-3">
+			<div
+				class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+			>
+				<span
+					class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+					>© 2023 <a
+						href="https://FacundoRamosG.com/"
+						class="hover:underline">FacundoRamosG™</a
+					>. All Rights Reserved.
+				</span>
+				
+			</div>
+	</footer>
+	</main>
+</Layout>
