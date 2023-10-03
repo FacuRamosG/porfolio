@@ -8,7 +8,7 @@ import Header from "../components/Header.astro"
 <Layout title="Facundo Ramos Garde">
 	<main
 		id="super-container"
-		class="antialiased text-white bg-[#13161c] -z-20 sm:m-auto max-w-6xl sm:px-3 font"
+		class="antialiased text-white  bg-[#0F172A]"
 	>
 		<!----- BACKGROUND ---->
 		<!-- <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none ">
@@ -28,20 +28,33 @@ import Header from "../components/Header.astro"
 	<section class="">
 		<!----- PRESENTATION ---->
 			<section
-				class=" bg-transparent z-30 top-0 bg-grid-slate-100 overflow-hidden pt-56">		
+				class=" bg-transparent z-30 top-0 bg-grid-slate-100 overflow-hidden pt-56 sm:m-auto max-w-6xl sm:px-3">		
+				
+				<div class="bg-[url('./public/bg-top.jpg')]
+					w-full h-3/4 
+					absolute left-0 top-0 
+					bg-bottom bg-no-repeat 
+					bg-slate-50 inset-0 
+					bg-inherit
+					border-b
+					border-[#333]
+					"
+				 
+				 >
 
+				</div>
 				<div class="pattern-boxes pattern-white pattern-bg-transparent 
-				pattern-size-6 pattern-opacity-5 w-full h-3/4 absolute left-0 top-0 ">  dsadsadsadss
+					pattern-size-6 pattern-opacity-5 w-full h-3/4 absolute left-0 top-0 ">
 				</div>
 
 
 				<div class="flex gap-10">
 					<div class="w-1/2 gap-4 my-auto flex flex-col" >
-						<h1 class="bg-transparent text-5xl text-gray-50 font-[700]">
+						<h1 class="bg-transparent text-5xl text-gray-50 font-[700] z-50">
 							Facundo Ramos Garde
 						</h1>
-						<p class="text-gray-500">Software Developer</p>
-						<p class="relative text-xl text-gray-300" style={"text-wrap: balance"}>
+						<p class="text-gray-500 z-50">Software Developer</p>
+						<p class="relative text-xl text-gray-300 z-50" style={"text-wrap: balance"}>
 							Innovative software engineer crafting digital solutions, merging code and vision to challenge technological frontiers.
 						</p>
 						<!-- <a
@@ -85,9 +98,9 @@ import Header from "../components/Header.astro"
 
 			<!----- PROYECTS ---->
 		
-			<section class="relative overflow-hidden pb-6 pt-14" id="projects">
+			<section class="relative overflow-hidden pb-6 pt-14 sm:m-auto max-w-6xl sm:px-3" id="projects">
 				
-				<h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50 font-[700]" >Proyects</h1>
+				<h1 class="text-4xl mb-8 inline-block w-52 text-gray-50 font-[700]" >Proyects</h1>
 
 				<div class="flex justify-center align-middle">
 					<div class="sm:grid grid-cols-2 gap-9 min-[320px]:block ">
@@ -133,7 +146,7 @@ import Header from "../components/Header.astro"
 			</section>
 
 			<!-- About me -->
-			<section id="about-me">
+			<section id="about-me" class="sm:m-auto max-w-6xl sm:px-3">
 				<h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50 font-[700]" >About me</h1>
 				<div class="flex gap-9">
 					<div>
@@ -152,8 +165,13 @@ import Header from "../components/Header.astro"
 			</section>
 
 		<!-- CONTACT ME	 -->
-		<section id="contact">
-			<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+		<section id="contact" class="relative bg-[url('./public/bg-top.jpg')] bg-bottom py-8 lg:py-16">
+			
+			<div class="pattern-boxes pattern-white pattern-bg-transparent 
+					pattern-size-6 pattern-opacity-5 w-full h-full absolute left-0 top-0 ">
+				</div>
+			
+			<div class="py-2 lg:py-10 px-4 mx-auto max-w-screen-md backdrop-blur-sm">
 				<h2 class="mb-4 text-4xl tracking-tight font-[700] text-center text-white">Contact</h2>
 				<form method="post" action="https://forms.un-static.com/forms/08bd2d4ef36a7f9a8db60dc6878e6cf823256e79" class="space-y-8">
 					<div>
@@ -171,11 +189,12 @@ import Header from "../components/Header.astro"
 					<button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">Send message</button>
 				</form>
 			</div>
+
 		  </section>
 
 			<!----- TEC ---->
 
-			<section class="mb-8 mt-10" id="tec">
+			<section class="mb-8 mt-10 sm:mx-auto max-w-6xl sm:px-3" id="tec">
 				<!-- <h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50">Technologies</h1> -->
 				<div class="flex justify-between items-center ">
 					<img src="/html5.svg" alt="logo of HTML" class="h-16 w-16" />
@@ -194,7 +213,7 @@ import Header from "../components/Header.astro"
 
 		<!----- FOOTER ---->
 
-	<footer class="bg-gray-800 w-full mb-3">
+	<footer class="bg-gray-800 w-full mb-3 sm:m-auto max-w-6xl sm:px-3">
 			<div
 				class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
 			>
