@@ -155,15 +155,15 @@ import Header from "../components/Header.astro"
 				<form method="post" action="https://forms.un-static.com/forms/08bd2d4ef36a7f9a8db60dc6878e6cf823256e79" class="space-y-8">
 					<div>
 						<label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your email</label>
-						<input type="email" id="email" class="  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="name@gmail.com" required>
+						<input type="email" name="email" id="inputEmail" class="  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="name@gmail.com" required>
 					</div>
 					<div>
 						<label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
 						<input type="text" id="subject" class="block p-3 w-full text-sm   rounded-lg border   focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="How can help you" required>
 					</div>
 					<div class="sm:col-span-2">
-						<label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your message</label>
-						<textarea id="message" rows="6" class="block p-2.5 w-full text-sm   rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a message..."></textarea>
+						<label for="inputMessage" class="block mb-2 text-sm font-medium text-gray-400">Your message</label>
+						<textarea name="inputMessage" id="message" rows="6" class="block p-2.5 w-full text-sm  form-control rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a message..."></textarea>
 					</div>
 					<button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">Send message</button>
 				</form>
