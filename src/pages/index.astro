@@ -28,7 +28,7 @@ import Header from "../components/Header.astro"
 	<section class="">
 		<!----- PRESENTATION ---->
 			<section
-				class=" bg-transparent z-30 top-0 bg-grid-slate-100 overflow-hidden pt-56 sm:m-auto px-6 max-w-6xl ">		
+				class=" bg-transparent z-30 top-0 bg-grid-slate-100 overflow-hidden pt-24 sm:pt-56 sm:m-auto px-6 max-w-6xl ">		
 				
 				<div class="bg-[url('https://porfolio-murex-two.vercel.app/bg-top.jpg')]
 					w-full h-3/4 
@@ -53,8 +53,8 @@ import Header from "../components/Header.astro"
 						<h1 class="bg-transparent text-5xl text-gray-50 font-[700] z-50">
 							Facundo Ramos Garde
 						</h1>
-						<p class="text-gray-500 z-50">Software Developer</p>
-						<p class="relative text-xl text-gray-300 z-50" style={"text-wrap: balance"}>
+						<p class="text-gray-400 text-2xl z-50">Front-End Developer</p>
+						<p class="relative text-xl text-gray-200 z-50" style={"text-wrap: balance"}>
 							Innovative software engineer crafting digital solutions, merging code and vision to challenge technological frontiers.
 						</p>
 						<!-- <a
@@ -66,11 +66,10 @@ import Header from "../components/Header.astro"
 							
 						</a> -->
 						<div class="z-40">
-							<a href="https://github.com/FacuRamosG" class="inline-block hover:invert mr-5"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="25" width="25"></a>
 							<a href="https://www.linkedin.com/in/facundo-ramos-garde-791a55280/" class="inline-block">
 								<svg fill="#ffffff" 
-									height="25px" 
-									width="25px" 
+									height="35px" 
+									width="35px" 
 									class="hover:fill-[#0077b5]"  
 									version="1.1" 
 									id="Layer_1"
@@ -88,6 +87,7 @@ import Header from "../components/Header.astro"
 						  	 		</g>
 						   		</svg>
 							</a>
+							<a href="https://github.com/FacuRamosG" class="inline-block hover:invert ml-5"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="35" width="35"></a>
 						</div>
 					</div>
 					<img src="https://porfolio-murex-two.vercel.app/FacuFoto.jpg" alt="" class="rounded-full z-50 object-cover sm:w-80 sm:h-80 min-[320px]:w-40 min-[320px]:h-40 hidden sm:block" >
@@ -133,13 +133,23 @@ import Header from "../components/Header.astro"
 						/> -->
 
 						<Proyects 
-							title="Weather" 
+							title="Tesla Landing Page" 
 							body="It's a copy of Tesla's page that had several animations I was interested in replicating." 
 							img="https://porfolio-murex-two.vercel.app/LandingTesla.png" 
 							github="https://github.com/FacuRamosG/landing-tesla" 
 							web="https://landing-tesla-xi.vercel.app/"
 							chips={['Astro', 'Tailwind']}
 						/>
+
+						<Proyects 
+							title="Ecomerce"
+							body="It's a copy of Tesla's page that had several animations I was interested in replicating." 
+							img="https://porfolio-murex-two.vercel.app/151shots_so.png" 
+							github="https://github.com/FacuRamosG/landing-tesla" 
+							web="https://landing-tesla-xi.vercel.app/"
+							chips={['NextJS','React', 'Tailwind']}
+						/>
+
 
 					</div>
 				</div>
@@ -166,7 +176,13 @@ import Header from "../components/Header.astro"
 			</section>
 
 		<!-- CONTACT ME	 -->
-		<section id="contact" class="relative bg-[url('https://porfolio-murex-two.vercel.app/bg-top.jpg')] bg-right-bottom py-8 lg:py-16 border-b border-[#333]">
+		<section id="contact" 
+			class="relative bg-[url('https://porfolio-murex-two.vercel.app/bg-top.jpg')] 
+				bg-right-bottom py-8 lg:py-16 
+				border-b border-[#333]
+				bg-cover
+
+				">
 			
 			<div class="pattern-boxes pattern-white pattern-bg-transparent 
 					pattern-size-6 pattern-opacity-5 w-full h-full absolute left-0 top-0 ">
@@ -197,14 +213,37 @@ import Header from "../components/Header.astro"
 
 			<section class="mb-8 mt-16 sm:mx-auto max-w-6xl px-6" id="tec">
 				<!-- <h1 class="text-4xl mb-8 border-b-2 inline-block w-52 text-gray-50">Technologies</h1> -->
-				<div class="flex justify-between items-center ">
-					<img src="/html5.svg" alt="logo of HTML" class="h-8 w-8 sm:h-16 sm:w-16" />
-					<img src="/css3.svg" alt="logo of CSS" class="h-8 w-8 sm:h-16 sm:w-16" />
-					<img src="/js.svg" alt="logo of JavaScript" class="h-8 w-8 sm:h-16 sm:w-16" />
-					<img src="/reactjs.svg" alt="logo of React" class="h-8 w-8 sm:h-16 sm:w-16" />
-					<img src="/tailwindcss-mark.svg" alt="logo of Tailwind" class="h-8 w-8 sm:h-16 sm:w-16" />
-					<img src="/ts-logo-256.svg" alt="logo of TypeScript" class="h-8 w-8 sm:h-16 sm:w-16">
-					<img src="/astro-icon-light.svg" alt="logo of Astro" class="h-8 w-8 sm:h-16 sm:w-16" />
+				<div class="grid grid-cols-fluid gap-3">
+					<div class="flex flex-col justify-between items-center gap-1">
+						<img src="/html5.svg" alt="logo of HTML" class=" h-16 w-16" />
+						<h2 class="text-center">HTML</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center gap-1">
+						<img src="/css3.svg" alt="logo of CSS" class=" h-16 w-16" />
+						<h2 class="text-center">CSS</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center gap-1">
+						<img src="/js.svg" alt="logo of JavaScript" class=" h-16 w-16" />
+						<h2 class="text-center">JavaScript</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center  gap-1">
+						<img src="/reactjs.svg" alt="logo of React" class=" h-16 w-16" />
+						<h2 class="text-center">React</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center gap-1">
+						<img src="/tailwindcss-mark.svg" alt="logo of Tailwind" class="h-16 w-16" />
+						<h2 class="text-center">Tailwind</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center gap-1">
+						<img src="/ts-logo-256.svg" alt="logo of TypeScript" class=" h-16 w-16">
+						<h2 class="text-center">TypeScript</h2>
+					</div>
+					<div class="flex flex-col justify-center items-center gap-1">
+						<img src="/astro-icon-light.svg" alt="logo of Astro" class=" h-16 w-16" />
+						<h2 class="text-center">Astro</h2>
+					</div>
+					
+					
 				</div>
 			</section>
 		</section>
@@ -216,15 +255,30 @@ import Header from "../components/Header.astro"
 
 	<footer class="bg-gray-800 w-full  sm:m-auto max-w-6xl sm:px-3">
 			<div
-				class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+				class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center"
 			>
-				<span
-					class="text-sm sm:text-center text-gray-400"
-					>© 2023 <a
-						href="https://FacundoRamosG.com/"
-						class="hover:underline">FacundoRamosG™</a
-					>. All Rights Reserved.
-				</span>
+				<a href="https://www.linkedin.com/in/facundo-ramos-garde-791a55280/" class="inline-block">
+					<svg fill="#ffffff" 
+						height="35px" 
+						width="35px" 
+						class="hover:fill-[#0077b5]"  
+						version="1.1" 
+						id="Layer_1"
+						xmlns="http://www.w3.org/2000/svg" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" 
+					viewBox="0 0 455 455" xml:space="preserve">
+						   <g>
+							   <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+							   <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+								M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+								   c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+								   c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+								   c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+								   z"/>
+						   </g>
+					   </svg>
+				</a>
+				<a href="https://github.com/FacuRamosG" class="inline-block hover:invert ml-5"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="35" width="35"></a>
 				
 			</div>
 	</footer>

@@ -21,15 +21,15 @@ const { github, title, body, web, img, chips } = Astro.props;
         </div>
     
         <div class="px-6 py-4">
-            {chips.slice(0,4).map(chip => <span class="text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
+            {chips.slice(0,4).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
             <br>
-            {chips.slice(4,10).map(chip => <span class="text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
+            {chips.slice(4,10).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
     
         </div>
     
         <div class="px-6 pt-4 pb-2 flex gap-2">
-            <a href={github} class="inline-block hover:invert"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="25" width="25"></a>
-            <a href={web}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link hover:invert cursor-pointer" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <a href={github} class="inline-block hover:invert"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="35" width="35"></a>
+            <a href={web}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link hover:invert cursor-pointer" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
                 <path d="M11 13l9 -9"></path>

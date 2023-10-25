@@ -12,6 +12,9 @@ module.exports = {
 			animation: {
 				'bounce-slow': 'bounce 3s linear infinite',
 			  },
+			gridTemplateColumns: {
+				'fluid': 'repeat(auto-fit, minmax(150px, 1fr))',
+			  },
 			  
 		},
 		patterns: {
