@@ -21,9 +21,9 @@ const { github, title, body, web, img, chips } = Astro.props;
         </div>
     
         <div class="px-2 md:px-6 py-4">
-            {chips.slice(0,3).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
+            {chips.slice(0,4).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
             <br>
-            {chips.slice(3,7).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
+            {chips.slice(4,7).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}
             <br>
             {chips.slice(7,10).map(chip => <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300">{chip}</span>)}    
         </div>
