@@ -12,7 +12,7 @@ const { github, title, body, web, img, chips } = Astro.props;
 ---
 
 <div class="max-w-xs md:max-w-md rounded overflow-hidden shadow-lg flex flex-col shadow-gray-950 min-[320px]:mb-6">
-    <a href={web}><img class="w-full" src={img} alt="Sunset in the mountains"></a>
+    <a href={web} target="_blank"><img class="w-full" src={img} alt="Sunset in the mountains"></a>
 
     <div class="flex flex-col h-full justify-between p-4">
         <div class="px-2 md:px-6 py-4">
@@ -29,8 +29,8 @@ const { github, title, body, web, img, chips } = Astro.props;
         </div>
     
         <div class="px-2 md:px-6 pt-4 pb-2 flex gap-2">
-            <a href={github} class="inline-block hover:invert"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="35" width="35"></a>
-            <a href={web}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link hover:invert cursor-pointer" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <a href={github} target="_blank" class="inline-block hover:invert"><img src="https://porfolio-murex-two.vercel.app/github-mark-white.png" alt="" height="35" width="35"></a>
+            <a href={web} target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link hover:invert cursor-pointer" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
                 <path d="M11 13l9 -9"></path>
